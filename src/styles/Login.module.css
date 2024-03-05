@@ -1,0 +1,126 @@
+.parent_login {
+  /* border: 2px solid blue; */
+  display: flex;
+  background-color: rgb(215, 215, 215);
+  width: 100%;
+}
+.parent_login > div:first-child {
+  width: 40%;
+  /* border: 2px solid red; */
+}
+.parent_login > div:first-child img {
+  width: 100%;
+  height: 100%;
+}
+.parent_login > div:last-child {
+  width: 60%;
+}
+.login_details {
+  /* border: 2px solid red; */
+  padding: 20px;
+}
+
+/* .login_details > div {
+  border: 2px solid green;
+} */
+
+.inner_login_details {
+  /* border: 2px solid black; */
+  /* width: 90%; */
+  margin: auto;
+  text-align: center;
+}
+.inner_login_details_input {
+  margin-top: 60px;
+}
+.inner_login_details_input h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.inner_login_details_input button {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.inner_login_details_input input {
+  width: 50%;
+  display: block;
+  margin: auto;
+  border: 2px solid lightgray;
+}
+.inner_login_details_input input + p {
+  width: 70%;
+  margin: auto;
+  font-size: 13px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.terms_condition > p {
+  font-size: 13px;
+}
+.terms_condition > p a {
+  color: rgb(197, 76, 76);
+  text-decoration: none;
+}
+.terms_condition > p input[type="checkbox"] {
+  margin-right: 10px;
+}
+.terms_condition > p:first-child {
+  border-top: 1px dotted rgb(41, 38, 38);
+  margin-top: 10px;
+  padding-top: 4px;
+}
+.terms_condition > p:first-child + p {
+  text-align: right;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.terms_condition > p:first-child + p + p {
+  border-top: 1px dotted rgb(41, 38, 38);
+  /* margin-top: 10px; */
+}
+.footer_copy {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+/* .footer_copy span {
+  padding: 15px;
+} */
+
+@media all and (max-width: 768px) {
+  .parent_login {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+  }
+  .parent_login > div {
+    width: 100%;
+  }
+  .parent_login > div:first-child {
+    display: none;
+  }
+  .parent_login > div:last-child {
+    width: 100%;
+  }
+}
+@media all and (max-width: 567px) {
+  .inner_login_details_input input {
+    width: 80%;
+  }
+  .footer_copy {
+    background-color: rgb(64, 63, 63);
+    color: rgb(177, 176, 176);
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 2px;
+    padding-left: 10px;
+    padding-right: 7px;
+  }
+}

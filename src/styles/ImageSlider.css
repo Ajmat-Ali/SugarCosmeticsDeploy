@@ -1,0 +1,32 @@
+.parent-slider-div > div {
+  /* border: 5px solid black; */
+  z-index: 0;
+}
+
+.parent-slider-div > div button {
+  z-index: 1;
+  cursor: pointer;
+}
+.res-parent-slider-div {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .parent-slider-div {
+    display: none;
+  }
+  .res-parent-slider-div {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+
+  .res-parent-slider-div img {
+    width: 90%;
+  }
+}
+@media all and (max-width: 557px) {
+  .res-parent-slider-div {
+    width: 97%;
+  }
+}

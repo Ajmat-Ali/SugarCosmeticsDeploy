@@ -1,0 +1,356 @@
+header {
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  color: white;
+  /* border: 2px solid red; */
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  /* border: 2px solid red; */
+  z-index: 1000;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+header menu {
+  margin: 0px;
+}
+header menu > div:first-child {
+  width: 100%;
+  background-color: #161414;
+  margin: 0px;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+  /* border: 2px solid red; */
+}
+header menu > div:first-child a {
+  font-size: 13px;
+}
+
+.menu-input-group.search-div {
+  display: none;
+}
+/* .navbar {
+  background-color: black;
+  color: #fff;
+} */
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  /* border: 2px solid yellow; */
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-right: auto;
+  width: 20%;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  border-top-left-radius: -5px;
+  width: 50%;
+}
+.input-group.search-div input {
+  background-color: transparent;
+  color: white;
+}
+.input-group.search-div input::placeholder {
+  color: #eee;
+}
+
+.navbar-icons {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.navbar-icons > div {
+  margin-right: 10px;
+  /* border: 2px solid green; */
+}
+
+.search-bar {
+  width: 200px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.toggle-button {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(255, 10, 10, 0.5); */
+  z-index: 10001;
+  overflow-x: hidden;
+  transition: 0.5s;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  /* border: 5px solid blue; */
+}
+
+.sidebar-content {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  padding-top: 60px;
+  /* border: 2px solid red; */
+  overflow-y: auto;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar a {
+  /* padding: 5px; */
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar ul a {
+  font-size: 14px;
+  font-weight: 500;
+}
+.sidebar ul a li {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid rgb(92, 92, 92);
+}
+.sidebar ul a li:hover {
+  background-color: #333;
+  color: rgb(127, 125, 125);
+}
+.sidebar-content ul .res-li {
+  border: none;
+  /* padding: 0px; */
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+.sidebar-logo {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  width: 200px;
+}
+.sidebar-logo img {
+  width: 100%;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+/* Hide default scrollbar */
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  /* border: 1px solid #ccc; */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  background-color: black;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+.inner-container {
+  display: inline-block;
+}
+
+.inner-container .item {
+  width: 90px;
+  background-color: black;
+  margin-right: 10px;
+  display: inline-block;
+}
+.inner-container .item img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.front-res-slider {
+  display: none;
+}
+.front-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  background-color: rgb(254, 254, 254);
+  padding-left: 10px;
+  /* border: 2px solid black; */
+}
+
+.front-scroll-container::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+.front-inner-container {
+  display: inline-block;
+  background-color: rgb(254, 254, 254);
+}
+
+.front-inner-container .item {
+  width: 50px;
+  background-color: rgb(254, 254, 254);
+  margin-right: 10px;
+  display: inline-block;
+  margin-right: 15px;
+}
+.front-inner-container .item img {
+  width: 100%;
+}
+
+/* ///////////////////////////////////////////////////  992px */
+@media all and (max-width: 992px) {
+  .navbar-icons {
+    /* border: 2px solid red; */
+    width: 73%;
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+    width: 25%;
+  }
+  .icons {
+    gap: 10px;
+  }
+
+  .menu-womens {
+    display: none;
+  }
+  /* header menu {
+    flex-wrap: wrap;
+  } */
+}
+/* //////////////////////////////////////////////   768px */
+@media screen and (max-width: 768px) {
+  .navbar-icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    margin-top: 10px;
+  }
+
+  .toggle-button {
+    display: block; /* Show toggle button */
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .input-group.search-div {
+    display: none;
+  }
+
+  .login-bar {
+    display: none; /* Hide icons */
+  }
+  header menu > div:first-child {
+    display: none;
+  }
+  .menu-input-group.search-div {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-top: 0px;
+    margin: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    /* border: 2px solid red; */
+  }
+
+  header menu {
+    background-color: rgb(240, 236, 236);
+    padding: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 4px;
+  }
+  .menu-input-group.search-div input {
+    border: 1px solid black;
+    color: #232020;
+    border-left: none;
+    /* width: 90%; */
+  }
+  .menu-input-group.search-div input::placeholder {
+    color: gray;
+  }
+  .menu-input-group.search-div button {
+    border: 1px solid black;
+    border-right: none;
+  }
+
+  .navbar-brand {
+    width: 30%;
+  }
+
+  .navbar-icons {
+    width: auto;
+  }
+  .front-res-slider {
+    display: block;
+  }
+}
+
+@media all and (max-width: 557px) {
+  .navbar-brand {
+    width: 40%;
+  }
+  .sidebar-logo {
+    width: 150px;
+  }
+}

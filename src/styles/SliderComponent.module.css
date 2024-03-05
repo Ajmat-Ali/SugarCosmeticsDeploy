@@ -1,0 +1,42 @@
+/* .parentDiv {
+  background-color: rgb(31, 29, 29);
+  margin-top: 20px;
+  padding: 20px 70px 60px 70px;
+} */
+
+.scroll_container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  color: rgb(45, 43, 43);
+}
+
+.scroll_container::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+.inner_container {
+  display: inline-block;
+  /* justify-content: space-evenly; */
+}
+
+.inner_container .item {
+  width: 400px;
+  background-color: rgb(228, 225, 225);
+  margin-right: 10px;
+  display: inline-block;
+  /* border: 2px solid green; */
+  border-radius: 13px;
+}
+.inner_container .item img {
+  width: 100%;
+}
+
+@media all and (max-width: 557px) {
+  .inner_container .item {
+    width: 280px;
+  }
+}
