@@ -1,1 +1,1 @@
-# SugarCosmeticsDeploy
+# SugarCosmetics
